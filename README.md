@@ -52,15 +52,21 @@ LateUpdate()
 OnGUI()
 OnDisable()
 OnEnable()
+
+// These are in Events > lifecycles;
 ```
+![image](https://user-images.githubusercontent.com/9862287/123566962-2b760600-d815-11eb-806f-c7ab27bbeeb9.png)
+
 
 ### [Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
 ```csharp
 // Every object in a Scene has a Transform.
 // It's used to store and manipulate the position, rotation and scale of the object.
 
-transform.position.x = 0;
+transform.position.x = 5;
 ```
+![image](https://user-images.githubusercontent.com/9862287/123567547-852b0000-d816-11eb-8cc0-8b7ff337038f.png)
+
 
 ### [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
 ```csharp
@@ -80,6 +86,8 @@ Vector3 v = new Vector3(0f, 0f, 0f);
 // A rotation 30 degrees around the y-axis
 Quaternion rotation = Quaternion.Euler(0, 30, 0);
 ```
+![image](https://user-images.githubusercontent.com/9862287/123572036-8ca2d700-d81f-11eb-83fd-ac6f8d110c8d.png)
+
 
 ### Euler Angles
 ```csharp
@@ -109,6 +117,8 @@ public void Translate(Vector3 translation, Space relativeTo = Space.Self);
 
 transform.Translate(Vector3.right * movementSpeed);
 ```
+![image](https://user-images.githubusercontent.com/9862287/123573263-bb21b180-d821-11eb-8513-c5c97bc3808e.png)
+
 
 #### Vector3.MoveTowards()
 ```csharp
@@ -119,6 +129,8 @@ public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDist
 Vector3 targetPosition;
 transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime);
 ```
+![image](https://user-images.githubusercontent.com/9862287/123574412-e1485100-d823-11eb-90f9-2c91007c7daf.png)
+
 
 #### Vector3.Lerp()
 ```csharp
@@ -130,6 +142,8 @@ float t = 0;
 t += Time.deltaTime * speed;
 transform.position = Vector3.Lerp(transform.position, targetPosition, t);
 ```
+![image](https://user-images.githubusercontent.com/9862287/123574747-8ebb6480-d824-11eb-8af6-f63da38c7bfe.png)
+
 
 #### Vector3.SmoothDamp()
 ```csharp
