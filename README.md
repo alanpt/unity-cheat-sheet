@@ -161,13 +161,20 @@ transform.position = Vector3.Lerp(transform.position, targetPosition, t);
 // The vector is smoothed by some spring-damper like function, which will never overshoot.
 // The most common use is for smoothing a follow camera.
 public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = Mathf.Infinity, float deltaTime = Time.deltaTime);
+```
+![image](https://user-images.githubusercontent.com/9862287/123891341-e258ba00-d9ac-11eb-93a4-18d572b33c8e.png)
 
+```csharp
 float smoothTime = 1f;
 Vector3 velocity;
 Vector3 targetPosition = target.TransformPoint(new Vector3(0, 5, -10));
 // Smoothly move the camera towards that target position
 transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 ```
+![image](https://user-images.githubusercontent.com/9862287/123891290-d1a84400-d9ac-11eb-8316-812bb644ab11.png)
+
+![smoothdamp](https://user-images.githubusercontent.com/9862287/123891102-855d0400-d9ac-11eb-90ac-a2656125cf3c.gif)
+
 
 ### Rotate Object
 #### Transform.rotation
@@ -178,6 +185,8 @@ transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref 
 
 transform.rotation = new Quaternion(rotx, roty, rotz, rotw);
 ```
+![image](https://user-images.githubusercontent.com/9862287/123898391-5d27d200-d9b9-11eb-9ec1-742f866e0598.png)
+
 
 #### Transform.eulerAngles
 ```csharp
@@ -187,6 +196,8 @@ transform.rotation = new Quaternion(rotx, roty, rotz, rotw);
 
 transform.eulerAngles = Vector3(rotx, roty, rotz);
 ```
+![image](https://user-images.githubusercontent.com/9862287/123898600-b7289780-d9b9-11eb-830b-bf7f26290d87.png)
+
 
 #### Transform.Rotate()
 ```csharp
