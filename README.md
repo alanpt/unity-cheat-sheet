@@ -400,3 +400,7 @@ Animator animator;
 
 Transform transform = animator.GetBoneTransform(HumanBodyBones.Head);
 ```
+
+### Change Location of object
+
+![image](https://user-images.githubusercontent.com/9862287/128634772-d3fd1fe0-5606-4e29-8b81-9f6cb519b2a3.png)
