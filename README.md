@@ -45,13 +45,33 @@
 // Offers some life cycle functions that are easier for you to develop your game.
 
 // Some of the most frequently used ones are as follows;
+// These will only run if the GameObject is enabled
+![image](https://user-images.githubusercontent.com/9862287/130880435-b3db1c23-bc9f-4894-a945-30bb2155dfe8.png)
+
+// Gets called once when the gameobject is enabled and never again. Good for setting variables.
+Awake()
+
+// Gets called once when the script is first enabled and never agai.
 Start()
+
+// Gets called in every frame (Limit using these)
 Update()
+
+// Gets called multiple times during a frame. Used with physics (Adding force to rigidbody etc)
 FixedUpdate()
+
+// Gets called in every frame but after Update() and before the camera renders.
 LateUpdate()
+
+// Gets called every frame for rendering and handling GUI events
 OnGUI()
+
+// Gets called everytime you use SetActive(false) on the script
 OnDisable()
+
+// Gets called everytime you use SetActive(true) on the script and before Start()
 OnEnable()
+
 
 // These are in Events > lifecycles;
 ```
