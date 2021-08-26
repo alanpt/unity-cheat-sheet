@@ -426,16 +426,38 @@ Transform transform = animator.GetBoneTransform(HumanBodyBones.Head);
 ![image](https://user-images.githubusercontent.com/9862287/128634772-d3fd1fe0-5606-4e29-8b81-9f6cb519b2a3.png)
 
 
-### Finding or traversing Game Objects
-// In an attempt to allow reusability and avoid hard coded links.
+## Finding or traversing Game Objects
+In an attempt to allow reusability and avoid hard coded links.
 
-## Find object by name anywhere
-//This can be slow and should be avoided. It is also not very reuable unless the object is always going to be called that. 
+### Find object by name anywhere
+This can be slow and should be avoided. It is also not very reusable unless the object is always going to be called that. 
+
 ```csharp
 GameObject.Find("Player");
 ```
 ![image](https://user-images.githubusercontent.com/9862287/130882081-f2c41ffd-7ca0-4a77-8713-0d4d60d1f348.png)
 
 Use this instead:
+
 ![image](https://user-images.githubusercontent.com/9862287/130882825-143f02bb-418d-4efc-bb0e-3eb1425c42fd.png)
+
+### A more specific find.
+Not as bad as a GameObject.Find. But should still be avoided
+
+```csharp
+transform.FindChild("Child");
+```
+![image](https://user-images.githubusercontent.com/9862287/130883771-3c044582-5c97-4ead-8a3c-f3dc67d53913.png)
+
+### Find objects by tag
+Don't forget to tag
+
+```csharp
+var books = GameObject.FindGameObjectsWithTag("Book");
+foreach (var book in books)
+{
+	Debug.Log("Found book titled: " + book.name);
+}
+```
+![image](https://user-images.githubusercontent.com/9862287/130884905-b6195aa2-af0e-41bf-b91b-edca5b684ece.png)
 
