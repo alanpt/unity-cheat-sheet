@@ -426,3 +426,16 @@ Transform transform = animator.GetBoneTransform(HumanBodyBones.Head);
 ![image](https://user-images.githubusercontent.com/9862287/128634772-d3fd1fe0-5606-4e29-8b81-9f6cb519b2a3.png)
 
 
+### Finding or traversing Game Objects
+// In an attempt to allow reusability and avoid hard coded links.
+
+## Find object by name anywhere
+//This can be slow and should be avoided. It is also not very reuable unless the object is always going to be called that. 
+```csharp
+GameObject.Find("Player");
+```
+![image](https://user-images.githubusercontent.com/9862287/130882081-f2c41ffd-7ca0-4a77-8713-0d4d60d1f348.png)
+
+Use this instead:
+![image](https://user-images.githubusercontent.com/9862287/130882825-143f02bb-418d-4efc-bb0e-3eb1425c42fd.png)
+
