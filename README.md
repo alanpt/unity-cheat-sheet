@@ -461,3 +461,7 @@ foreach (var book in books)
 ```
 ![image](https://user-images.githubusercontent.com/9862287/130884905-b6195aa2-af0e-41bf-b91b-edca5b684ece.png)
 
+## Normcore with VRIF
+Attach this to the Normcore VR Player Prefab, to only be seen as a representation of another and not self.
+
+![image](https://user-images.githubusercontent.com/9862287/130902292-d5899121-6153-4186-af72-b4c5710dab3a.png)
