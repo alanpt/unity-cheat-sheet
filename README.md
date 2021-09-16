@@ -38,15 +38,20 @@
 
 ## Basics
 
+
 ### [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
 [MonoBehaviour Life Cycle Flow Chart](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
+
 ```csharp
 // MonoBehaviour is the base class from which every Unity script derives.
 // Offers some life cycle functions that are easier for you to develop your game.
 
 // Some of the most frequently used ones are as follows;
 // These will only run if the GameObject is enabled
+```
 ![image](https://user-images.githubusercontent.com/9862287/130880435-b3db1c23-bc9f-4894-a945-30bb2155dfe8.png)
+
+```csharp
 
 // Gets called once when the gameobject is enabled and never again. Good for setting variables.
 Awake()
@@ -76,6 +81,7 @@ OnEnable()
 // These are in Events > lifecycles;
 ```
 ![image](https://user-images.githubusercontent.com/9862287/123566962-2b760600-d815-11eb-806f-c7ab27bbeeb9.png)
+
 
 
 ### [Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
