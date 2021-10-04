@@ -1,4 +1,5 @@
-# Unity Cheat Sheet
+# Unity and Visual Scripting Cheat Sheet
+
 
 ## Table of Contents
 
@@ -471,3 +472,9 @@ foreach (var book in books)
 Attach this to the Normcore VR Player Prefab, to only be seen as a representation of another and not self.
 
 ![image](https://user-images.githubusercontent.com/9862287/130902292-d5899121-6153-4186-af72-b4c5710dab3a.png)
+
+## Lists, Dictionaries and Hashsets
+- List - an ordered collection of objects
+- Dictionary - a key-value pair collection that allows looking up values based on keys
+- HashSet - an unordered collection of objects
+- 
